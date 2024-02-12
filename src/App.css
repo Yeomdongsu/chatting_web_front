@@ -23,6 +23,7 @@
   background: #669966;
   color: white;
   text-align: center;
+  height: 2.75vh;
 }
 
 /* Chat 컴포넌트의 스타일 */
@@ -94,10 +95,10 @@
 
 .input-div > textarea {
   width: 100%;
-  height: 80px;
+  /* height: 80px; */
   border: none;
   outline: none;
-
+  height: 10.4vh;
 }
 
 /* Format 컴포넌트의 스타일 */

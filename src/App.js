@@ -40,7 +40,7 @@ const App = () => {
   return (
           <div className="container">
             <div className="chat_wrap">
-              <div className="header">Dong GPT</div>
+              <div className="header">따뜻한 말투의 GPT</div>
               <div className="chat" ref={chatRef}>
                 {loading == true ? (
                   <>

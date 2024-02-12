@@ -64,7 +64,7 @@ const ChatMessage = ({ sender, message, align }) => {
             {align === "left" ? (
                 loading == true ? (
                     <>
-                        <img src={process.env.PUBLIC_URL + '/speech.gif'} alt="로딩 중" style={{ width:"166px", height:"125px", position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }}/>
+                        <img src={process.env.PUBLIC_URL + '/loading.gif'} alt="로딩 중" style={{ width: "80px", height: "80px", position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }}/>
                         <GptUI sender={sender} message={message} MantextToSpeech={MantextToSpeech} WomantextToSpeech={WomantextToSpeech} pause={pause}/>
                     </>
                 ) : (
