@@ -1,0 +1,99 @@
+/* Diary.css */
+
+.title-container {
+    text-align: center;
+    font-size: 33px;
+    margin-top: 70px;
+    color: #669966;
+    font-weight: 500;
+}
+
+.app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+  
+.input-container, .diary-container {
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    margin: 0 20px;
+    padding: 20px;
+    border: 1px solid #669966;
+    border-radius: 8px;
+}
+
+.div-title {
+    margin-bottom: 15px;
+    color: #669966;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.div-subtitle {
+    margin-bottom: 65px;
+    color: #669966;
+    font-size: 18px;
+    text-align: center;
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+.span-field {
+    color: #669966;
+    padding: 10px;
+    padding-left: 0;
+    
+}
+
+.input-field {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* .submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+} */
+
+.arrow-image {
+    width: 100px;
+    cursor: pointer;
+}
+
+.diary-container {
+    border: 1px solid #669966;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .app-container {
+        flex-direction: column;
+    }
+    .input-container, .arrow-container, .diary-container {
+        width: 100%;
+        margin: 10px;
+    }
+}
