@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from 'react';
 import './Main.css';
 import axios from 'axios';
 import ChatMessage from './ChatMessage';
+import { Nav } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 const Main = () => {
 
@@ -10,6 +12,19 @@ const Main = () => {
   const [loading, setLoading] = useState(false);
 
   const chatRef = useRef(null);
+
+  const [activeTab, setActiveTab] = useState('main');
+  const nav = useNavigate();
+
+  let [fade, setFade] = useState('')
+
+    useEffect(() => {
+        setTimeout(() => {setFade('end')}, 100)
+        
+        return () => {
+            setFade('')
+        }
+    }, []);
 
   // useEffect를 사용하여 스크롤을 아래로 내림
   useEffect(() => {
@@ -38,9 +53,14 @@ const Main = () => {
   };
 
   return (
+        <div className={'start ' + fade}>
+          <div className="tab-container-main">
+                <div className={activeTab === 'main' ? 'active-tab-main' : 'tab-main'} onClick={() => {setActiveTab('main')}}>싸가지없는 GPT 챗봇</div>
+                <div className={activeTab === 'diary' ? 'active-tab-main' : 'tab-main'} onClick={() => {setActiveTab('diary'); nav("/diary")}}>따뜻한 GPT가 써주는 일기</div>
+          </div>      
           <div className="container">
             <div className="chat_wrap">
-              <div className="header">차갑고 비관적인 GPT 챗봇</div>
+              <div className="header">싸가지없는 GPT 챗봇</div>
               <div className="chat" ref={chatRef}>
                 {loading == true ? (
                   <>
@@ -63,6 +83,7 @@ const Main = () => {
               </div>
             </div> 
           </div>
+        </div>
   );
 };
 

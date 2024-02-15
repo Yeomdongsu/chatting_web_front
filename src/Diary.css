@@ -1,9 +1,53 @@
 /* Diary.css */
 
+.start {
+  /* opacity : 0; */
+  transform: scale(0);
+  /* transform: rotate(180deg); */
+  transition: transform 0.5s;
+} 
+
+.end {
+  /* opacity : 1; */
+  transform: scale(1);
+  /* transform: rotate(0); */
+  transition : transform 0.5s
+}
+
+.tab-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 17px;
+    margin-top: 10px;
+}
+
+.tab {
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #669966;
+    text-align: center;
+    width: 190px;
+}
+
+.active-tab {
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 1px solid #669966;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #669966;
+    text-align: center;
+    width: 190px;
+}
+
 .title-container {
     text-align: center;
-    font-size: 33px;
-    margin-top: 70px;
+    font-size: 27px;
+    margin-top: 28px;
     color: #669966;
     font-weight: 500;
 }
@@ -15,9 +59,9 @@
     height: 85vh;
 }
   
-.input-container, .diary-container {
+.input-container {
     width: 400px;
-    height: 600px;
+    height: 680px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,13 +75,13 @@
 .div-title {
     margin-bottom: 15px;
     color: #669966;
-    font-size: 35px;
+    font-size: 33px;
     text-align: center;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .div-subtitle {
-    margin-bottom: 65px;
+    /* margin-bottom: 65px; */
     color: #669966;
     font-size: 18px;
     text-align: center;
@@ -62,30 +106,22 @@
     font-size: 16px;
 }
 
-/* .submit-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.submit-button:hover {
-    background-color: #0056b3;
-} */
-
 .arrow-image {
     width: 100px;
     cursor: pointer;
+    margin-bottom: 90px;
 }
 
 .diary-container {
     border: 1px solid #669966;
     padding: 20px;
     overflow-y: auto;
+    width: 400px;
+    height: 680px;
+    margin: 0 20px;
+    border-radius: 8px;
+    font-size: 15.5px;
+    font-family: inherit;
 }
 
 @media screen and (max-width: 768px) {

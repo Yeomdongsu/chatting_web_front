@@ -1,4 +1,4 @@
-/* 분홍 : #F18C7E 연두 : 669966*/
+/* 분홍 : #F18C7E 연두 : #669966 붉은 : #990000 */
 /* 리액트 컴포넌트에서 전체 요소에 적용되는 스타일 */
 * {
   margin: 0;
@@ -8,6 +8,45 @@
 /* body {
   background-color: 
 } */
+
+/* .start {
+  opacity : 0
+} 
+
+.end {
+  opacity : 1;
+  transition : opacity 0.5s
+} */
+
+.tab-container-main {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.tab-main {
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #669966;
+  text-align: center;
+  width: 190px;
+}
+
+.active-tab-main {
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  border: 1px solid #990000;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #990000;
+  text-align: center;
+  width: 190px;
+}
 
 /* 전체 컨테이너의 스타일 */
 .container {
@@ -20,20 +59,20 @@
 .header {
   font-size: 16px;
   padding: 15px 0;
-  background: #669966;
+  background: #990000;
   color: white;
   text-align: center;
-  height: 2.75vh;
+  height: 2.2vh;
 }
 
 /* Chat 컴포넌트의 스타일 */
 .chat {
-  min-height: 77.7vh; /* 최소 높이 설정 */
-  max-height: 77.7vh; /* 최대 높이 설정 */
+  min-height: 66vh; /* 최소 높이 설정 */
+  max-height: 66vh; /* 최대 높이 설정 */
   overflow-y: auto;
   padding-bottom: 15px;
-  border-left: 1px solid #669966;
-  border-right: 1px solid #669966;
+  border-left: 1px solid #990000;
+  border-right: 1px solid #990000;
   background-color: white;
 }
 
@@ -75,7 +114,7 @@
   word-break: break-all;
   margin: 5px 20px;
   max-width: 75%;
-  border: 1px solid #669966;
+  border: 1px solid #990000;
   padding: 11px;
   border-radius: 5px;
   background-color: #FCFCFC;
@@ -90,7 +129,7 @@
   padding: 10px;
   background-color: #FFF;
   text-align: center;
-  border: 1px solid #669966;
+  border: 1px solid #990000;
 }
 
 .input-div > textarea {
