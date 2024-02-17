@@ -17,7 +17,7 @@
 .tab-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 17px;
+    margin-bottom: 5px;
     margin-top: 10px;
 }
 
@@ -46,8 +46,8 @@
 
 .title-container {
     text-align: center;
-    font-size: 27px;
-    margin-top: 28px;
+    font-size: 25px;
+    margin-bottom: 15px;
     color: #669966;
     font-weight: 500;
 }
@@ -56,12 +56,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    /* height: 85vh; */
 }
   
 .input-container {
     width: 400px;
-    height: 680px;
+    height: 78vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -117,7 +117,7 @@
     padding: 20px;
     overflow-y: auto;
     width: 400px;
-    height: 680px;
+    height: 78vh;
     margin: 0 20px;
     border-radius: 8px;
     font-size: 15.5px;
